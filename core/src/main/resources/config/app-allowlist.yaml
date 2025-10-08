@@ -1,0 +1,20 @@
+# Welche Programme darf Jarvis starten?
+allowedApps:
+  notepad: "notepad"
+  calculator: "calc"
+  chrome: "chrome"
+  vscode: "code"
+  explorer: "explorer"
+  files: "files"
+
+# Optionale Synonyme, um verschiedene Sprachvarianten zu erkennen
+synonyms:
+  editor: "notepad"
+  text editor: "notepad"
+  rechne: "calculator"
+  rechner: "calculator"
+  kalkulator: "calculator"
+  google chrome: "chrome"
+  finder: "files"
+  dateimanager: "files"
+  file explorer: "explorer"

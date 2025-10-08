@@ -1,0 +1,31 @@
+# Skill: Anwendung starten (Windows Beispiel)
+
+name: app.launch
+description: Starte eine Anwendung nach Name oder Alias.
+examples:
+  - "öffne notepad"
+  - "starte rechner"
+
+intent: APP_LAUNCH
+
+params:
+  - key: app
+    type: string
+    required: true
+
+confirmation:
+  required: false
+
+match:
+  patterns:
+    - "(öffne|starte) (?<app>.+)"
+  synonyms:
+    notepad: ["note pad", "editor", "text editor"]
+    calculator: ["calc", "taschenrechner", "rechner"]
+
+execute:
+  windows:
+    type: process
+    by_alias:
+      notepad: "notepad.exe"
+      calculator: "calc.exe"

@@ -1,0 +1,5 @@
+name: say.hello
+description: Sagt hallo oder spricht Text laut aus.
+match:
+  patterns:
+    - "(?i)^(sage|sag|say|speak) (.+)"

@@ -1,0 +1,5 @@
+name: app.launch.exterior
+description: Starte Apps (externe Variante, zu Testzwecken).
+match:
+  patterns:
+    - "(öffne|starte) rechner"
