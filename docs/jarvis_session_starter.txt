@@ -3,14 +3,16 @@
 🔗 Repository
 GitHub: https://github.com/madappe/jarvis.git
 GitLab: https://gitlab.com/strujic1989/ai-jarvis
-📊 Projekt-Status
-Aktuelle Phase: B.1.3b - VAD mit Frame-Hysterese (abgeschlossen)
-Nächster Schritt: B.1.3c - VAD Integration in STT-Pipeline
-Letzte Änderungen:
 
-✅ Energy-based Voice Activity Detection implementiert
-✅ Frame-basierte Analyse (20ms Fenster) mit Hysterese
-✅ CLI-Kommando --mic-vad mit Diagnose-Output
+📊 Projekt-Status
+**Aktuelle Phase:** B.1.3c - VAD Integration in STT-Pipeline
+**Letzter Schritt:** B.1.3b - VAD mit Frame-Hysterese (abgeschlossen)
+
+**Letzte Änderungen:**
+- ✅ Development-Log-System erstellt
+- ✅ AppAliasService.java entfernt (Build-Fix)
+- ✅ Maven-Build erfolgreich
+- ✅ Dokumentation vollständig
 
 🏗️ Projekt-Architektur
 Tech Stack: Java 17 + Maven Multi-Modul
