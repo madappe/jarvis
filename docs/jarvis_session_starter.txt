@@ -1,4 +1,3 @@
-<artifact identifier="jarvis-session-starter" type="text/markdown" title="Jarvis Session Starter Template">
 # 🤖 Jarvis Voice Assistant - Development Session
 
 🔗 Repository
@@ -81,5 +80,3 @@ Geplant:
 ✅ Bereit zum Arbeiten
 Bitte Repository-Check durchführen und aktuellen Stand bestätigen.
 Warte dann auf mein "Go" für den nächsten Schritt.
-
-</artifact>
