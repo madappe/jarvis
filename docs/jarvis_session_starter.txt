@@ -1,0 +1,85 @@
+<artifact identifier="jarvis-session-starter" type="text/markdown" title="Jarvis Session Starter Template">
+# 🤖 Jarvis Voice Assistant - Development Session
+
+🔗 Repository
+GitHub: https://github.com/madappe/jarvis.git
+GitLab: https://gitlab.com/strujic1989/ai-jarvis
+📊 Projekt-Status
+Aktuelle Phase: B.1.3b - VAD mit Frame-Hysterese (abgeschlossen)
+Nächster Schritt: B.1.3c - VAD Integration in STT-Pipeline
+Letzte Änderungen:
+
+✅ Energy-based Voice Activity Detection implementiert
+✅ Frame-basierte Analyse (20ms Fenster) mit Hysterese
+✅ CLI-Kommando --mic-vad mit Diagnose-Output
+
+🏗️ Projekt-Architektur
+Tech Stack: Java 17 + Maven Multi-Modul
+Module:
+
+core/ - Shared logic (Skills, Router, Config, Events)
+executor/ - Command execution (Apps, TTS)
+stt/ - Speech-to-Text (Audio, Vosk, VAD)
+cli/ - Command-line interface (Main entry point)
+ui/ - Future GUI/SystemTray (planned)
+skills/ - YAML skill definitions
+
+Key Classes:
+
+cli/JarvisCli.java - Main CLI dispatcher
+stt/audio/MicTester.java - Audio testing & VAD
+stt/audio/AudioDeviceService.java - Device management
+core/router/SkillRouter.java - Intent matching
+executor/apps/AppLaunchExecutor.java - App launching
+
+🎯 Arbeitsweise (wichtig!)
+Sprache: Antworten auf Deutsch, Code/Commands auf Englisch
+Workflow:
+
+Schritt für Schritt arbeiten
+Immer auf "Go" warten vor nächstem Schritt
+Code gut kommentieren für Verständlichkeit
+Vor neuem Code fragen: "Gibt es das schon im Projekt?"
+Immer exakte Modul/Package/Pfad-Angaben machen
+
+Consistency Rules:
+
+CLI: Einheitliches Parsing (cmd = args[0].toLowerCase())
+Logging: [CLI] / [ERROR] / [WARN] Präfixe
+Audio: 16kHz/16-bit/mono Format überall
+Exit-Codes: 0=OK, 2=no match, 3=unsupported, 4=exec failed
+
+📝 Dokumentations-Prompts
+Summary erstellen:
+"Gib mir ein Summary vom erledigten und was bevorsteht"
+Docs-Integration:
+"Erstelle eine Docs-Version vom Summary" (ohne Markdown für Word)
+Roadmap-Status:
+"Gib mir einen Roadmap-Zwischenstand"
+🚀 Aktueller Fokus
+Was funktioniert:
+
+✅ Mikrofon-Auswahl & persistente Konfiguration
+✅ Audio-Capture mit Ringbuffer
+✅ Energy-based VAD mit Frame-Hysterese
+✅ Vosk STT Integration (Dummy + Live)
+✅ Skill-Routing (app.launch, say.hello)
+✅ TTS via Windows SAPI
+
+In Arbeit:
+
+🔄 VAD-Vorprüfung vor STT-Erkennung
+🔄 Integration in Vosk-Pipeline
+
+Geplant:
+
+⏳ Wake-Word Detection
+⏳ Push-to-Talk Modus
+⏳ Multi-Device Support
+
+
+✅ Bereit zum Arbeiten
+Bitte Repository-Check durchführen und aktuellen Stand bestätigen.
+Warte dann auf mein "Go" für den nächsten Schritt.
+
+</artifact>
